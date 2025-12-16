@@ -1,0 +1,3173 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='youtube_cleaned' inline='true' name='federated.01m1hhc1chkup616dmy3h0yzep1p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_cleaned' name='textscan.0tlulaf1150m0317vt6jc01tti62'>
+            <connection class='textscan' directory='/Users/jangbomun/example/youtube' filename='youtube_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tlulaf1150m0317vt6jc01tti62' name='youtube_cleaned.csv' table='[youtube_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='string' name='publishedAt' ordinal='2' />
+            <column datatype='string' name='channelId' ordinal='3' />
+            <column datatype='string' name='channelTitle' ordinal='4' />
+            <column datatype='real' name='categoryId' ordinal='5' />
+            <column datatype='string' name='trending_date' ordinal='6' />
+            <column datatype='string' name='tags' ordinal='7' />
+            <column datatype='string' name='view_count' ordinal='8' />
+            <column datatype='string' name='likes' ordinal='9' />
+            <column datatype='string' name='comment_count' ordinal='10' />
+            <column datatype='string' name='thumbnail_link' ordinal='11' />
+            <column datatype='string' name='comments_disabled' ordinal='12' />
+            <column datatype='string' name='description' ordinal='13' />
+            <column datatype='string' name='is_trending' ordinal='14' />
+            <column datatype='string' name='title_length' ordinal='15' />
+            <column datatype='string' name='tags_count' ordinal='16' />
+            <column datatype='string' name='publish_weekday' ordinal='17' />
+            <column datatype='string' name='publish_hour' ordinal='18' />
+            <column datatype='string' name='category_name' ordinal='19' />
+            <column datatype='string' name='F21' ordinal='20' />
+            <column datatype='string' name='F22' ordinal='21' />
+            <column datatype='string' name='F23' ordinal='22' />
+            <column datatype='string' name='F24' ordinal='23' />
+            <column datatype='string' name='F25' ordinal='24' />
+            <column datatype='string' name='F26' ordinal='25' />
+            <column datatype='string' name='F27' ordinal='26' />
+            <column datatype='string' name='F28' ordinal='27' />
+            <column datatype='string' name='F29' ordinal='28' />
+            <column datatype='string' name='F30' ordinal='29' />
+            <column datatype='string' name='F31' ordinal='30' />
+            <column datatype='string' name='F32' ordinal='31' />
+            <column datatype='string' name='F33' ordinal='32' />
+            <column datatype='string' name='F34' ordinal='33' />
+            <column datatype='string' name='F35' ordinal='34' />
+            <column datatype='string' name='F36' ordinal='35' />
+            <column datatype='string' name='F37' ordinal='36' />
+            <column datatype='string' name='F38' ordinal='37' />
+            <column datatype='string' name='F39' ordinal='38' />
+            <column datatype='string' name='F40' ordinal='39' />
+            <column datatype='string' name='F41' ordinal='40' />
+            <column datatype='string' name='F42' ordinal='41' />
+            <column datatype='string' name='F43' ordinal='42' />
+            <column datatype='string' name='F44' ordinal='43' />
+            <column datatype='string' name='F45' ordinal='44' />
+            <column datatype='string' name='F46' ordinal='45' />
+            <column datatype='string' name='F47' ordinal='46' />
+            <column datatype='real' name='F48' ordinal='47' />
+            <column datatype='string' name='F49' ordinal='48' />
+            <column datatype='string' name='F50' ordinal='49' />
+            <column datatype='string' name='F51' ordinal='50' />
+            <column datatype='string' name='F52' ordinal='51' />
+            <column datatype='string' name='F53' ordinal='52' />
+            <column datatype='string' name='F54' ordinal='53' />
+            <column datatype='string' name='F55' ordinal='54' />
+            <column datatype='string' name='F56' ordinal='55' />
+            <column datatype='real' name='F57' ordinal='56' />
+            <column datatype='real' name='F58' ordinal='57' />
+            <column datatype='real' name='F59' ordinal='58' />
+            <column datatype='real' name='F60' ordinal='59' />
+            <column datatype='integer' name='F61' ordinal='60' />
+            <column datatype='integer' name='F62' ordinal='61' />
+            <column datatype='string' name='F63' ordinal='62' />
+            <column datatype='string' name='F64' ordinal='63' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publishedAt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publishedAt]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>publishedAt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelId]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>channelId</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelTitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelTitle]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>channelTitle</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryId</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[categoryId]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>categoryId</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view_count</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[view_count]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>view_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_trending</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[is_trending]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>is_trending</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_length</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title_length]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>title_length</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags_count</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags_count]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>tags_count</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_weekday</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publish_weekday]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>publish_weekday</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_hour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publish_hour]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>publish_hour</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category_name]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>category_name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F21</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F21]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F21</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F22</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F22]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F22</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F23</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F23]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F23</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F24</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F24]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F24</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F25</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F25]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F25</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F26</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F26]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F26</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F27</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F27]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F27</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F28</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F28]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F28</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F29</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F29]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F29</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F30</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F30]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F30</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F31</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F31]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F31</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F32</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F32]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F32</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F33</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F33]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F33</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F34</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F34]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F34</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F35</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F35]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F35</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F36</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F36]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F36</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F37</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F37]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F37</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F38</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F38]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F38</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F39</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F39]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F39</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F40</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F40]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F40</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F41</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F41]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F41</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F42</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F42]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F42</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F43</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F43]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F43</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F44</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F44]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F44</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F45</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F45]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F45</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F46</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F46]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F46</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F47</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F47]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F47</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F48</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F48]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F48</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F49</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F49]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F49</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F50</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F50]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F50</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F51</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F51]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F51</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F52</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F52]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F52</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F53</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F53]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F53</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F54</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F54]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F54</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F55</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F55]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F55</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F56</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F56]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F56</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F57</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F57]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F57</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F58</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F58]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F58</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F59</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F59]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F59</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F60</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F60]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F60</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F61</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F61]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F61</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F62</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F62]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F62</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F63</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F63]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F63</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F64</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F64]</local-name>
+            <parent-name>[youtube_cleaned.csv]</parent-name>
+            <remote-alias>F64</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='계산1' datatype='real' name='[Calculation_554505717361618944]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[view_count]' />
+      </column>
+      <column caption='youtube_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76]' role='measure' type='quantitative' />
+      <column caption='Category Id' datatype='real' name='[categoryId]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='1.0' value='Film &amp; Animation&#10;' />
+          <alias key='2.0' value='Autos &amp; Vehicles&#10;' />
+          <alias key='10.0' value='Music' />
+          <alias key='15.0' value='Pets &amp; Animals&#10;' />
+          <alias key='17.0' value='Sports' />
+          <alias key='19.0' value='Travel &amp; Events&#10;' />
+          <alias key='20.0' value='Gaming' />
+          <alias key='22.0' value='People &amp; Blogs&#10;' />
+          <alias key='23.0' value='Comedy&#10;' />
+          <alias key='24.0' value='Entertainment&#10;' />
+          <alias key='25.0' value='News &amp; Politics&#10;' />
+          <alias key='26.0' value='Howto &amp; Style&#10;' />
+          <alias key='27.0' value='Education&#10;' />
+          <alias key='28.0' value='Science &amp; Technology&#10;' />
+          <alias key='29.0' value='Nonprofits &amp; Activism&#10;' />
+          <alias key='30.0' value='Movies' />
+        </aliases>
+      </column>
+      <column caption='Category Name' datatype='string' name='[category_name]' role='dimension' type='nominal' />
+      <column caption='Channel Id' datatype='string' name='[channelId]' role='dimension' type='nominal' />
+      <column caption='Channel Title' datatype='string' name='[channelTitle]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='string' name='[comment_count]' role='dimension' type='nominal' />
+      <column caption='Comments Disabled' datatype='string' name='[comments_disabled]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Is Trending' datatype='string' name='[is_trending]' role='dimension' type='nominal' />
+      <column caption='Likes' datatype='string' name='[likes]' role='dimension' type='nominal' />
+      <column caption='Publish Hour' datatype='string' name='[publish_hour]' role='dimension' type='nominal' />
+      <column caption='Publish Weekday' datatype='string' name='[publish_weekday]' role='dimension' type='nominal' />
+      <column caption='Published At' datatype='string' name='[publishedAt]' role='dimension' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Tags Count' datatype='string' name='[tags_count]' role='dimension' type='nominal' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Title Length' datatype='string' name='[title_length]' role='dimension' type='nominal' />
+      <column caption='Trending Date' datatype='string' name='[trending_date]' role='dimension' type='nominal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='View Count' datatype='real' datatype-customized='true' name='[view_count]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='/var/folders/bl/jts3h0cn2qj3l04cmx5h2hxm0000gn/T/tableau-temp/#TableauTemp_1d0cc510zqom381gwr82k1bq4sjy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/04/2025 08:47:59 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>video_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[video_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>285816</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>252914</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publishedAt</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[publishedAt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publishedAt</remote-alias>
+              <ordinal>2</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>239982</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channelId</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channelId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channelId</remote-alias>
+              <ordinal>3</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52811</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channelTitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channelTitle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channelTitle</remote-alias>
+              <ordinal>4</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52050</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categoryId</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[categoryId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>categoryId</remote-alias>
+              <ordinal>5</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trending_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trending_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trending_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4887</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags</remote-alias>
+              <ordinal>7</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62360</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>view_count</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[view_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>view_count</remote-alias>
+              <ordinal>8</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>165298</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>likes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>likes</remote-alias>
+              <ordinal>9</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>135121</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comment_count</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[comment_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comment_count</remote-alias>
+              <ordinal>10</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63996</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thumbnail_link</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[thumbnail_link]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thumbnail_link</remote-alias>
+              <ordinal>11</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>179545</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comments_disabled</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[comments_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comments_disabled</remote-alias>
+              <ordinal>12</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>79473</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>13</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>134302</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_trending</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[is_trending]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_trending</remote-alias>
+              <ordinal>14</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>96458</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_length</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title_length]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_length</remote-alias>
+              <ordinal>15</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39417</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags_count</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tags_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags_count</remote-alias>
+              <ordinal>16</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47853</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publish_weekday</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[publish_weekday]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publish_weekday</remote-alias>
+              <ordinal>17</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47931</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publish_hour</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[publish_hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publish_hour</remote-alias>
+              <ordinal>18</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43174</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category_name</remote-alias>
+              <ordinal>19</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36631</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F21</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F21]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F21</remote-alias>
+              <ordinal>20</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37102</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F22</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F22]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F22</remote-alias>
+              <ordinal>21</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34444</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F23</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F23]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F23</remote-alias>
+              <ordinal>22</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33931</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F24</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F24]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F24</remote-alias>
+              <ordinal>23</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32692</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F25</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F25]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F25</remote-alias>
+              <ordinal>24</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30572</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F26</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F26]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F26</remote-alias>
+              <ordinal>25</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29843</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F27</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F27]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F27</remote-alias>
+              <ordinal>26</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28563</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F28</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F28]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F28</remote-alias>
+              <ordinal>27</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29700</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F29</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F29]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F29</remote-alias>
+              <ordinal>28</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28467</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F30</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F30]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F30</remote-alias>
+              <ordinal>29</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26648</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F31</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F31]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F31</remote-alias>
+              <ordinal>30</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27202</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F32</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F32]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F32</remote-alias>
+              <ordinal>31</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28320</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F33</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F33]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F33</remote-alias>
+              <ordinal>32</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20465</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F34</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F34]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F34</remote-alias>
+              <ordinal>33</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20141</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F35</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F35]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F35</remote-alias>
+              <ordinal>34</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19357</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F36</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F36]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F36</remote-alias>
+              <ordinal>35</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17112</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F37</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F37]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F37</remote-alias>
+              <ordinal>36</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13347</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F38</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F38]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F38</remote-alias>
+              <ordinal>37</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10764</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F39</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F39]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F39</remote-alias>
+              <ordinal>38</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12491</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F40</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F40]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F40</remote-alias>
+              <ordinal>39</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7302</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F41</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F41]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F41</remote-alias>
+              <ordinal>40</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7548</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F42</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F42]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F42</remote-alias>
+              <ordinal>41</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7248</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F43</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F43]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F43</remote-alias>
+              <ordinal>42</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6898</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F44</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F44]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F44</remote-alias>
+              <ordinal>43</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3964</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F45</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F45]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F45</remote-alias>
+              <ordinal>44</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4532</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F46</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F46]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F46</remote-alias>
+              <ordinal>45</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6997</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F47</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F47]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F47</remote-alias>
+              <ordinal>46</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7229</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F48</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F48]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F48</remote-alias>
+              <ordinal>47</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1828</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F49</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F49]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F49</remote-alias>
+              <ordinal>48</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6060</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F50</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F50]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F50</remote-alias>
+              <ordinal>49</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4599</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F51</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F51]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F51</remote-alias>
+              <ordinal>50</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7228</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F52</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F52]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F52</remote-alias>
+              <ordinal>51</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5711</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F53</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F53]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F53</remote-alias>
+              <ordinal>52</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5483</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F54</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F54]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F54</remote-alias>
+              <ordinal>53</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6353</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F55</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F55]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F55</remote-alias>
+              <ordinal>54</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5817</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F56</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F56]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F56</remote-alias>
+              <ordinal>55</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4607</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F57</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F57]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F57</remote-alias>
+              <ordinal>56</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1161</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F58</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F58]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F58</remote-alias>
+              <ordinal>57</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F59</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F59]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F59</remote-alias>
+              <ordinal>58</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>304</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F60</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F60]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F60</remote-alias>
+              <ordinal>59</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>696</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F61</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F61]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F61</remote-alias>
+              <ordinal>60</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F62</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F62]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F62</remote-alias>
+              <ordinal>61</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>508</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F63</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F63]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F63</remote-alias>
+              <ordinal>62</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6543</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F64</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F64]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F64</remote-alias>
+              <ordinal>63</ordinal>
+              <family>youtube_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9025</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='video_id' />
+        <field-sort-custom-order field='title' />
+        <field-sort-custom-order field='publishedAt' />
+        <field-sort-custom-order field='channelId' />
+        <field-sort-custom-order field='channelTitle' />
+        <field-sort-custom-order field='categoryId' />
+        <field-sort-custom-order field='trending_date' />
+        <field-sort-custom-order field='tags' />
+        <field-sort-custom-order field='view_count' />
+        <field-sort-custom-order field='Calculation_554505717361618944' />
+        <field-sort-custom-order field='likes' />
+        <field-sort-custom-order field='comment_count' />
+        <field-sort-custom-order field='thumbnail_link' />
+        <field-sort-custom-order field='comments_disabled' />
+        <field-sort-custom-order field='description' />
+        <field-sort-custom-order field='is_trending' />
+        <field-sort-custom-order field='title_length' />
+        <field-sort-custom-order field='tags_count' />
+        <field-sort-custom-order field='publish_weekday' />
+        <field-sort-custom-order field='publish_hour' />
+        <field-sort-custom-order field='category_name' />
+        <field-sort-custom-order field='F21' />
+        <field-sort-custom-order field='F22' />
+        <field-sort-custom-order field='F23' />
+        <field-sort-custom-order field='F24' />
+        <field-sort-custom-order field='F25' />
+        <field-sort-custom-order field='F26' />
+        <field-sort-custom-order field='F27' />
+        <field-sort-custom-order field='F28' />
+        <field-sort-custom-order field='F29' />
+        <field-sort-custom-order field='F30' />
+        <field-sort-custom-order field='F31' />
+        <field-sort-custom-order field='F32' />
+        <field-sort-custom-order field='F33' />
+        <field-sort-custom-order field='F34' />
+        <field-sort-custom-order field='F35' />
+        <field-sort-custom-order field='F36' />
+        <field-sort-custom-order field='F37' />
+        <field-sort-custom-order field='F38' />
+        <field-sort-custom-order field='F39' />
+        <field-sort-custom-order field='F40' />
+        <field-sort-custom-order field='F41' />
+        <field-sort-custom-order field='F42' />
+        <field-sort-custom-order field='F43' />
+        <field-sort-custom-order field='F44' />
+        <field-sort-custom-order field='F45' />
+        <field-sort-custom-order field='F46' />
+        <field-sort-custom-order field='F47' />
+        <field-sort-custom-order field='F48' />
+        <field-sort-custom-order field='F49' />
+        <field-sort-custom-order field='F50' />
+        <field-sort-custom-order field='F51' />
+        <field-sort-custom-order field='F52' />
+        <field-sort-custom-order field='F53' />
+        <field-sort-custom-order field='F54' />
+        <field-sort-custom-order field='F55' />
+        <field-sort-custom-order field='F56' />
+        <field-sort-custom-order field='F57' />
+        <field-sort-custom-order field='F58' />
+        <field-sort-custom-order field='F59' />
+        <field-sort-custom-order field='F60' />
+        <field-sort-custom-order field='F61' />
+        <field-sort-custom-order field='F62' />
+        <field-sort-custom-order field='F63' />
+        <field-sort-custom-order field='F64' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='youtube_cleaned.csv' id='youtube_cleaned.csv_D6CAC0A134BC4C1495EE848C498B5A76'>
+            <properties context=''>
+              <relation connection='textscan.0tlulaf1150m0317vt6jc01tti62' name='youtube_cleaned.csv' table='[youtube_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='video_id' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='string' name='publishedAt' ordinal='2' />
+                  <column datatype='string' name='channelId' ordinal='3' />
+                  <column datatype='string' name='channelTitle' ordinal='4' />
+                  <column datatype='real' name='categoryId' ordinal='5' />
+                  <column datatype='string' name='trending_date' ordinal='6' />
+                  <column datatype='string' name='tags' ordinal='7' />
+                  <column datatype='string' name='view_count' ordinal='8' />
+                  <column datatype='string' name='likes' ordinal='9' />
+                  <column datatype='string' name='comment_count' ordinal='10' />
+                  <column datatype='string' name='thumbnail_link' ordinal='11' />
+                  <column datatype='string' name='comments_disabled' ordinal='12' />
+                  <column datatype='string' name='description' ordinal='13' />
+                  <column datatype='string' name='is_trending' ordinal='14' />
+                  <column datatype='string' name='title_length' ordinal='15' />
+                  <column datatype='string' name='tags_count' ordinal='16' />
+                  <column datatype='string' name='publish_weekday' ordinal='17' />
+                  <column datatype='string' name='publish_hour' ordinal='18' />
+                  <column datatype='string' name='category_name' ordinal='19' />
+                  <column datatype='string' name='F21' ordinal='20' />
+                  <column datatype='string' name='F22' ordinal='21' />
+                  <column datatype='string' name='F23' ordinal='22' />
+                  <column datatype='string' name='F24' ordinal='23' />
+                  <column datatype='string' name='F25' ordinal='24' />
+                  <column datatype='string' name='F26' ordinal='25' />
+                  <column datatype='string' name='F27' ordinal='26' />
+                  <column datatype='string' name='F28' ordinal='27' />
+                  <column datatype='string' name='F29' ordinal='28' />
+                  <column datatype='string' name='F30' ordinal='29' />
+                  <column datatype='string' name='F31' ordinal='30' />
+                  <column datatype='string' name='F32' ordinal='31' />
+                  <column datatype='string' name='F33' ordinal='32' />
+                  <column datatype='string' name='F34' ordinal='33' />
+                  <column datatype='string' name='F35' ordinal='34' />
+                  <column datatype='string' name='F36' ordinal='35' />
+                  <column datatype='string' name='F37' ordinal='36' />
+                  <column datatype='string' name='F38' ordinal='37' />
+                  <column datatype='string' name='F39' ordinal='38' />
+                  <column datatype='string' name='F40' ordinal='39' />
+                  <column datatype='string' name='F41' ordinal='40' />
+                  <column datatype='string' name='F42' ordinal='41' />
+                  <column datatype='string' name='F43' ordinal='42' />
+                  <column datatype='string' name='F44' ordinal='43' />
+                  <column datatype='string' name='F45' ordinal='44' />
+                  <column datatype='string' name='F46' ordinal='45' />
+                  <column datatype='string' name='F47' ordinal='46' />
+                  <column datatype='real' name='F48' ordinal='47' />
+                  <column datatype='string' name='F49' ordinal='48' />
+                  <column datatype='string' name='F50' ordinal='49' />
+                  <column datatype='string' name='F51' ordinal='50' />
+                  <column datatype='string' name='F52' ordinal='51' />
+                  <column datatype='string' name='F53' ordinal='52' />
+                  <column datatype='string' name='F54' ordinal='53' />
+                  <column datatype='string' name='F55' ordinal='54' />
+                  <column datatype='string' name='F56' ordinal='55' />
+                  <column datatype='real' name='F57' ordinal='56' />
+                  <column datatype='real' name='F58' ordinal='57' />
+                  <column datatype='real' name='F59' ordinal='58' />
+                  <column datatype='real' name='F60' ordinal='59' />
+                  <column datatype='integer' name='F61' ordinal='60' />
+                  <column datatype='integer' name='F62' ordinal='61' />
+                  <column datatype='string' name='F63' ordinal='62' />
+                  <column datatype='string' name='F64' ordinal='63' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='youtube_title_length_analysis' inline='true' name='federated.1ckicdg1tk5o6f1e4k2w40dbawvq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_title_length_analysis' name='textscan.00twsn71rzuruq1bddege0m7k1ix'>
+            <connection class='textscan' directory='/Users/jangbomun/example/youtube' filename='youtube_title_length_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.00twsn71rzuruq1bddege0m7k1ix' name='youtube_title_length_analysis.csv' table='[youtube_title_length_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='title' ordinal='0' />
+            <column datatype='integer' name='title_length' ordinal='1' />
+            <column datatype='real' name='view_count' ordinal='2' />
+            <column datatype='string' name='category_name' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[youtube_title_length_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[youtube_title_length_analysis.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_title_length_analysis.csv_BC58CAB8C2CC435F9642731DA4BB9330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_length]</local-name>
+            <parent-name>[youtube_title_length_analysis.csv]</parent-name>
+            <remote-alias>title_length</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_title_length_analysis.csv_BC58CAB8C2CC435F9642731DA4BB9330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[view_count]</local-name>
+            <parent-name>[youtube_title_length_analysis.csv]</parent-name>
+            <remote-alias>view_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_title_length_analysis.csv_BC58CAB8C2CC435F9642731DA4BB9330]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category_name]</local-name>
+            <parent-name>[youtube_title_length_analysis.csv]</parent-name>
+            <remote-alias>category_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_title_length_analysis.csv_BC58CAB8C2CC435F9642731DA4BB9330]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Title Length(구간차원)' datatype='integer' name='[Title Length(구간차원)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[title_length]' peg='0' size='10' />
+      </column>
+      <column caption='youtube_title_length_analysis.csv' datatype='table' name='[__tableau_internal_object_id__].[youtube_title_length_analysis.csv_BC58CAB8C2CC435F9642731DA4BB9330]' role='measure' type='quantitative' />
+      <column caption='Category Name' datatype='string' name='[category_name]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Title Length' datatype='integer' name='[title_length]' role='measure' type='quantitative' />
+      <column caption='View Count' datatype='real' name='[view_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='/var/folders/bl/jts3h0cn2qj3l04cmx5h2hxm0000gn/T/tableau-temp/#TableauTemp_1q7qkke0z2di6f14r38220zwzkzl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/05/2025 12:06:36 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>youtube_title_length_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>260671</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_length</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_length]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_length</remote-alias>
+              <ordinal>1</ordinal>
+              <family>youtube_title_length_analysis.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>185</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>view_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[view_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>view_count</remote-alias>
+              <ordinal>2</ordinal>
+              <family>youtube_title_length_analysis.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>303685</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>youtube_title_length_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='youtube_title_length_analysis.csv' id='youtube_title_length_analysis.csv_BC58CAB8C2CC435F9642731DA4BB9330'>
+            <properties context=''>
+              <relation connection='textscan.00twsn71rzuruq1bddege0m7k1ix' name='youtube_title_length_analysis.csv' table='[youtube_title_length_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='title' ordinal='0' />
+                  <column datatype='integer' name='title_length' ordinal='1' />
+                  <column datatype='real' name='view_count' ordinal='2' />
+                  <column datatype='string' name='category_name' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='youtube_tags' inline='true' name='federated.1eb72km04kjvgh1bp0gbe1wyalaj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_tags' name='textscan.10mggib18kesdd17hvvwp1uuzwdi'>
+            <connection class='textscan' directory='/Users/jangbomun/example/youtube' filename='youtube_tags.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10mggib18kesdd17hvvwp1uuzwdi' name='youtube_tags.csv' table='[youtube_tags#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='datetime' name='publishedAt' ordinal='2' />
+            <column datatype='string' name='channelId' ordinal='3' />
+            <column datatype='string' name='channelTitle' ordinal='4' />
+            <column datatype='real' name='categoryId' ordinal='5' />
+            <column datatype='date' name='trending_date' ordinal='6' />
+            <column datatype='string' name='tags' ordinal='7' />
+            <column datatype='real' name='view_count' ordinal='8' />
+            <column datatype='real' name='likes' ordinal='9' />
+            <column datatype='real' name='comment_count' ordinal='10' />
+            <column datatype='string' name='thumbnail_link' ordinal='11' />
+            <column datatype='integer' name='comments_disabled' ordinal='12' />
+            <column datatype='string' name='description' ordinal='13' />
+            <column datatype='integer' name='is_trending' ordinal='14' />
+            <column datatype='integer' name='tag_count' ordinal='15' />
+            <column datatype='integer' name='title_length' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publishedAt</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[publishedAt]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>publishedAt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelId]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>channelId</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelTitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelTitle]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>channelTitle</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryId</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[categoryId]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>categoryId</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[view_count]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>view_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_trending</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_trending]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>is_trending</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tag_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tag_count]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>tag_count</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_length</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_length]</local-name>
+            <parent-name>[youtube_tags.csv]</parent-name>
+            <remote-alias>title_length</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='youtube_tags.csv' datatype='table' name='[__tableau_internal_object_id__].[youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F]' role='measure' type='quantitative' />
+      <column caption='Category Id' datatype='real' name='[categoryId]' role='dimension' type='ordinal' />
+      <column caption='Channel Id' datatype='string' name='[channelId]' role='dimension' type='nominal' />
+      <column caption='Channel Title' datatype='string' name='[channelTitle]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='real' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Comments Disabled' datatype='integer' name='[comments_disabled]' role='measure' type='quantitative' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Is Trending' datatype='integer' name='[is_trending]' role='measure' type='quantitative' />
+      <column caption='Likes' datatype='real' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Published At' datatype='datetime' name='[publishedAt]' role='dimension' type='ordinal' />
+      <column caption='Tag Count' datatype='integer' name='[tag_count]' role='measure' type='quantitative' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Title Length' datatype='integer' name='[title_length]' role='measure' type='quantitative' />
+      <column caption='Trending Date' datatype='date' name='[trending_date]' role='dimension' type='ordinal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='View Count' datatype='real' name='[view_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='/var/folders/bl/jts3h0cn2qj3l04cmx5h2hxm0000gn/T/tableau-temp/#TableauTemp_0il6z8t1d2ucnv1aa84to15lt4ly.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/06/2025 08:11:30 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>video_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[video_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>video_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>217520</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>228309</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>publishedAt</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[publishedAt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>publishedAt</remote-alias>
+              <ordinal>2</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>217520</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channelId</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channelId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channelId</remote-alias>
+              <ordinal>3</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channelTitle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channelTitle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channelTitle</remote-alias>
+              <ordinal>4</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47892</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>categoryId</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[categoryId]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>categoryId</remote-alias>
+              <ordinal>5</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trending_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[trending_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trending_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tags</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tags]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tags</remote-alias>
+              <ordinal>7</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>78335</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>view_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[view_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>view_count</remote-alias>
+              <ordinal>8</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>302942</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>likes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>likes</remote-alias>
+              <ordinal>9</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>118738</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comment_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[comment_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comment_count</remote-alias>
+              <ordinal>10</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25189</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>thumbnail_link</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[thumbnail_link]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>thumbnail_link</remote-alias>
+              <ordinal>11</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>217520</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>comments_disabled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[comments_disabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>comments_disabled</remote-alias>
+              <ordinal>12</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>13</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>141794</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_trending</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_trending]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_trending</remote-alias>
+              <ordinal>14</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tag_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tag_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tag_count</remote-alias>
+              <ordinal>15</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_length</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_length]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_length</remote-alias>
+              <ordinal>16</ordinal>
+              <family>youtube_tags.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>195</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='youtube_tags.csv' id='youtube_tags.csv_F299C9715CE4460FBEA7C7D87B82049F'>
+            <properties context=''>
+              <relation connection='textscan.10mggib18kesdd17hvvwp1uuzwdi' name='youtube_tags.csv' table='[youtube_tags#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='video_id' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='datetime' name='publishedAt' ordinal='2' />
+                  <column datatype='string' name='channelId' ordinal='3' />
+                  <column datatype='string' name='channelTitle' ordinal='4' />
+                  <column datatype='real' name='categoryId' ordinal='5' />
+                  <column datatype='date' name='trending_date' ordinal='6' />
+                  <column datatype='string' name='tags' ordinal='7' />
+                  <column datatype='real' name='view_count' ordinal='8' />
+                  <column datatype='real' name='likes' ordinal='9' />
+                  <column datatype='real' name='comment_count' ordinal='10' />
+                  <column datatype='string' name='thumbnail_link' ordinal='11' />
+                  <column datatype='integer' name='comments_disabled' ordinal='12' />
+                  <column datatype='string' name='description' ordinal='13' />
+                  <column datatype='integer' name='is_trending' ordinal='14' />
+                  <column datatype='integer' name='tag_count' ordinal='15' />
+                  <column datatype='integer' name='title_length' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_title_length_analysis' name='federated.1ckicdg1tk5o6f1e4k2w40dbawvq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ckicdg1tk5o6f1e4k2w40dbawvq'>
+            <column aggregation='None' caption='Title Length(구간차원)' datatype='integer' name='[Title Length(구간차원)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[title_length]' peg='0' size='10' />
+            </column>
+            <column-instance column='[view_count]' derivation='Avg' name='[avg:view_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Title Length(구간차원)]' derivation='None' name='[none:Title Length(구간차원):ok]' pivot='key' type='ordinal' />
+            <column caption='Title Length' datatype='integer' name='[title_length]' role='measure' type='quantitative' />
+            <column caption='View Count' datatype='real' name='[view_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.450276255607605' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ckicdg1tk5o6f1e4k2w40dbawvq].[avg:view_count:qk]</rows>
+        <cols>[federated.1ckicdg1tk5o6f1e4k2w40dbawvq].[none:Title Length(구간차원):ok]</cols>
+        <show-full-range>
+          <column>[federated.1ckicdg1tk5o6f1e4k2w40dbawvq].[Title Length(구간차원)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{430B8832-CDAB-4ABA-A0D9-9AE909D23047}' />
+    </worksheet>
+    <worksheet name='시트 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C0B5DE62-8A92-4B36-A18D-4D1FC3728239}' />
+    </worksheet>
+    <worksheet name='시트 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_cleaned' name='federated.01m1hhc1chkup616dmy3h0yzep1p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01m1hhc1chkup616dmy3h0yzep1p'>
+            <column-instance column='[view_count]' derivation='Avg' name='[avg:view_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Category Id' datatype='real' name='[categoryId]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='1.0' value='Film &amp; Animation&#10;' />
+                <alias key='2.0' value='Autos &amp; Vehicles&#10;' />
+                <alias key='10.0' value='Music' />
+                <alias key='15.0' value='Pets &amp; Animals&#10;' />
+                <alias key='17.0' value='Sports' />
+                <alias key='19.0' value='Travel &amp; Events&#10;' />
+                <alias key='20.0' value='Gaming' />
+                <alias key='22.0' value='People &amp; Blogs&#10;' />
+                <alias key='23.0' value='Comedy&#10;' />
+                <alias key='24.0' value='Entertainment&#10;' />
+                <alias key='25.0' value='News &amp; Politics&#10;' />
+                <alias key='26.0' value='Howto &amp; Style&#10;' />
+                <alias key='27.0' value='Education&#10;' />
+                <alias key='28.0' value='Science &amp; Technology&#10;' />
+                <alias key='29.0' value='Nonprofits &amp; Activism&#10;' />
+                <alias key='30.0' value='Movies' />
+              </aliases>
+            </column>
+            <column-instance column='[categoryId]' derivation='None' name='[none:categoryId:ok]' pivot='key' type='ordinal' />
+            <column caption='View Count' datatype='real' datatype-customized='true' name='[view_count]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01m1hhc1chkup616dmy3h0yzep1p].[none:categoryId:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:categoryId:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:categoryId:ok]' member='%null%' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='0.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='0.75' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='3.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='4.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='5.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='6.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='7.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='8.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='9.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='11.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='12.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='13.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='14.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='16.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='18.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='21.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='31.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='32.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='33.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='34.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='39.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='41.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='42.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='49.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='51.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='52.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='54.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='57.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='60.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='61.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='64.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='66.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='67.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='69.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='71.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='76.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='77.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='79.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='80.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='84.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='88.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='91.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='93.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='95.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='97.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='99.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='100.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='2022.0' />
+                <groupfilter function='member' level='[none:categoryId:ok]' member='30000.0' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.01m1hhc1chkup616dmy3h0yzep1p].[none:categoryId:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01m1hhc1chkup616dmy3h0yzep1p].[avg:view_count:qk]</rows>
+        <cols>[federated.01m1hhc1chkup616dmy3h0yzep1p].[none:categoryId:ok]</cols>
+      </table>
+      <simple-id uuid='{1F1DF71C-E4F7-436F-B368-EB38CD1163AD}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='시트 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B4375D2-8067-42CD-9A91-BA1E404604CE}' />
+    </window>
+    <window class='worksheet' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{76A60297-51AC-433F-AD52-C2CBFB567AA7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{22BD2A83-CA69-4A38-BFF6-6D1A5BFDE2AC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='시트 2' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
